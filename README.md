@@ -50,3 +50,4 @@ options.channels = 2;        // optional; 0 keeps input channel count
 
 bool ok = m4amortal::convert_m4a_to_wav("input.m4a", "output.wav", options, &error);
 ```
+library is key
