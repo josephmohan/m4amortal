@@ -1,0 +1,27 @@
+# git rm -r --cached .
+# git add .
+# ============================================================================
+
+**/.DS_Store
+**/.claude/
+**/.codex/
+**/build/
+**/builds/
+**/__pycache_/
+**/__pycache__/
+**/Installer/
+**/dist/
+**/tmp/
+
+*.pid
+*.log
+*.db-wal
+*.db-shm
+
+CLAUDE.md
+GEMINI.md
+AGENTS.md
+
+zzz_ignore_this_folder/
+bin/
+# ============================================================================
