@@ -80,7 +80,7 @@ bool convert_m4a_to_wav(const std::string& input_path,
   }
 
   args.push_back("-acodec");
-  args.push_back("pcm_s16le");
+  args.push_back("pcm_s24le");
   args.push_back("-vn");
   args.push_back(output_path);
 

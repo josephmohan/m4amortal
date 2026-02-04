@@ -1,19 +1,15 @@
 # m4amortal
-
 A small C++ library for converting `.m4a` audio files to `.wav` by invoking `ffmpeg`.
+brew tap josephmohan/m4amortal
+brew install m4amortal
 
 ## CLI usage
-
 After install, users run:
-
-```bash
 m4amortal path/to/file.m4a
-```
 
 The command writes `path/to/file.wav` right next to the source file and prints the output path.
 
 ## Build
-
 ```bash
 make
 ```
@@ -22,7 +18,7 @@ This builds:
 - `lib/libm4amortal.a` (static library)
 - `bin/m4amortal` (CLI)
 
-Requirement: `ffmpeg` must be installed and available on `PATH`.
+ffmpeg rqrd
 
 ## Homebrew
 
@@ -30,15 +26,6 @@ The included formula at `Formula/m4amortal.rb` declares:
 - `depends_on "ffmpeg"`
 
 So when users install via your tap, Homebrew installs `ffmpeg` automatically before `m4amortal`.
-
-## Local run
-
-```bash
-make
-./bin/m4amortal "Westfield Century City.m4a"
-```
-
-## Library usage
 
 ```cpp
 #include "m4a_to_wav.h"
